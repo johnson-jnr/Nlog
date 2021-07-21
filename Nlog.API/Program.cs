@@ -15,7 +15,6 @@ namespace Nlog.API
 
             try
             {
-                logger.Info(logger.Name);
                 CreateHostBuilder(args).Build().Run();
 
             }

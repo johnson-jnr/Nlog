@@ -23,12 +23,12 @@ namespace Nlog.API.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            _logger.LogInformation("This is an info message");
             _logger.LogDebug("This is a debug message");
+            _logger.LogInformation("This is an info message");
             _logger.LogWarning("This is a warning message ");
             _logger.LogError(new Exception(), "This is an error message");
 
-            return new string[] { "Hello", "World" };
+            return new string[] { "Cool", "Weather" };
 
         }
     }
